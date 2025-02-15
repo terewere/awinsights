@@ -1,0 +1,7 @@
+php artisan serve --host=192.168.100.9 --port=8000
+10.0.2.2
+
+https://themeforest.net/search/parallax
+
+primary color #754500
+secondary color #F49E3B
