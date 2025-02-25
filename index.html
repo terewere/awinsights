@@ -216,6 +216,66 @@
     </style>
     <!-- Meta Tags -->
 
+      
+<style>
+  .project-item {
+      margin-bottom: 15px;
+  }
+
+  .project-card {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-card:hover {
+      transform: scale(1.05);
+  }
+
+  .project-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+
+  .project-card:hover .project-overlay {
+      opacity: 1;
+  }
+
+  .project-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 12px;
+      margin-bottom: 0;
+      text-align: center;
+  }
+
+  .project-description {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+  }
+</style>
+
     <meta
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
       name="viewport"
@@ -495,7 +555,7 @@
                 class="link scroll btn btn-large btn-rounded btn-pink btn-hvr-blue mt-3"
                 href="#services"
               >
-                Learn More
+                
                 <div class="btn-hvr-setting">
                   <ul class="btn-hvr-setting-inner">
                     <li class="btn-hvr-effect"></li>
@@ -520,348 +580,540 @@
     </section>
     <!--About Us End-->
 
-    <!--Services Start-->
   <!-- Services Section -->
 <section id="services" class="py-5">
   <style>
     .process-wrapp {
         position: relative;
         text-align: center;
-        padding: 2rem 1.5rem;
+        padding: 0;
         background: #fff;
         box-shadow: 0 0 30px rgba(0,0,0,0.05);
         border-radius: 8px;
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
         height: 100%;
+        overflow: hidden;
+    }
+    
+    .process-wrapp:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .service-img-container {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .service-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .process-wrapp:hover .service-img {
+        transform: scale(1.1);
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .service-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .process-wrapp:hover .service-overlay {
+        opacity: 1;
+    }
+    
+    .overlay-text {
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
   </style>
  
   <div class="container">
-      <h2 class=" mb-5">Our Services</h2>
+      <h2 class="mb-5">Our Services</h2>
       <div class="row">
           <!-- Project Development -->
           <div class="col-md-4 mb-5">
               <div class="process-wrapp">
-                  <span class="pro-step blue">
-                      <i class="fas fa-project-diagram"></i>
-                  </span>
-                  <h4 class="service-heading">Project Development</h4>
-                  <p class="service-description">
-                      Leverage our insights and meta-level intelligence to bring your projects to life. With over 5000 hours of combined experience, we guide you from concept to investment maturity.
-                  </p>
+                  <div class="service-img-container">
+                      <img src="./img/project_development.jpeg" alt="Project Development" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Project Development</h4>
+                      <p class="service-description">
+                          Leverage our insights and meta-level intelligence to bring your projects to life. With over 5000 hours of combined experience, we guide you from concept to investment maturity.
+                      </p>
+                  </div>
               </div>
           </div>
 
           <!-- Capital Raising -->
           <div class="col-md-4 mb-5">
               <div class="process-wrapp">
-                  <span class="pro-step midnight">
-                      <i class="fas fa-chart-line"></i>
-                  </span>
-                  <h4 class="service-heading">Capital Raising</h4>
-                  <p class="service-description">
-                      Navigate financial complexities with our corporate finance expertise and market relationships. We help secure the required finance for your business or project.
-                  </p>
+                  <div class="service-img-container">
+                      <img src="./img/stacks-coins.jpg" alt="Capital Raising" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Capital Raising</h4>
+                      <p class="service-description">
+                          Navigate financial complexities with our corporate finance expertise and market relationships. We help secure the required finance for your business or project.
+                      </p>
+                  </div>
               </div>
           </div>
 
           <!-- Accounting Services -->
           <div class="col-md-4 mb-5">
               <div class="process-wrapp">
-                  <span class="pro-step purple">
-                      <i class="fas fa-calculator"></i>
-                  </span>
-                  <h4 class="service-heading">Accounting Services</h4>
-                  <p class="service-description">
-                      Comprehensive bookkeeping services, revenue assurance, statutory compliance filings, and investor communications to keep your business compliant and informed.
-                  </p>
+                  <div class="service-img-container">
+                      <img src="./img/side-view-cropped-man-working-financial-report.jpg" alt="Accounting Services" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Accounting Services</h4>
+                      <p class="service-description">
+                          Comprehensive bookkeeping services, revenue assurance, statutory compliance filings, and investor communications to keep your business compliant and informed.
+                      </p>
+                  </div>
               </div>
           </div>
 
           <!-- Market Development -->
           <div class="col-md-4 mb-5">
               <div class="process-wrapp">
-                  <span class="pro-step pink">
-                      <i class="fas fa-globe-africa"></i>
-                  </span>
-                  <h4 class="service-heading">Market Development</h4>
-                  <p class="service-description">
-                      Seamless market entry into Ghana and West African markets through our localized partnerships, ensuring smooth regulatory compliance and risk management.
-                  </p>
+                  <div class="service-img-container">
+                      <img src="./img/discussing-statistics.jpg" alt="Market Development" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Market Development</h4>
+                      <p class="service-description">
+                          Seamless market entry into Ghana and West African markets through our localized partnerships, ensuring smooth regulatory compliance and risk management.
+                      </p>
+                  </div>
               </div>
           </div>
 
           <!-- Strategy -->
           <div class="col-md-4 mb-5">
               <div class="process-wrapp">
-                  <span class="pro-step blue">
-                      <i class="fas fa-chess"></i>
-                  </span>
-                  <h4 class="service-heading">Strategy</h4>
-                  <p class="service-description">
-                      Navigate competitive waves and manage geopolitical complexities impacting your business. We help you stay ahead of market disruptions and technological innovations.
-                  </p>
+                  <div class="service-img-container">
+                      <img src="./img/pexels-pixabay.jpg" alt="Strategy" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Strategy</h4>
+                      <p class="service-description">
+                          Navigate competitive waves and manage geopolitical complexities impacting your business. We help you stay ahead of market disruptions and technological innovations.
+                      </p>
+                  </div>
               </div>
           </div>
       </div>
   </div>
 </section>
-  
     <!--Services End-->
 
-    <!--Projects Start-->
+<!--Projects Start-->
+<section id="projects" class="py-5">
+  <div class="container">
+      <h2 class="mb-5 text-center">New Projects</h2>
+      <div class="row">
+          <!-- Climate Smart Agriculture -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/climate-smart-agriculture.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Seamless market entry into Ghana and West African markets through our localized partnerships, ensuring smooth regulatory compliance and risk management.
+                          </p>
+                      </div>
+                  </div>
+                  <h4 class="project-title">Climate Smart Agriculture</h4>
+              </div>
+          </div>
 
-    <section id="projects" class="py-5">
-      <style>
-        .process-wrapp {
-            position: relative;
-            text-align: center;
-            padding: 2rem 1.5rem;
-            background: #fff;
-            box-shadow: 0 0 30px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            height: 100%;
-        }
-      </style>
-     
-      <div class="container">
-          <h2 class="mb-5">New Projects</h2>
-          <div class="row">
-              <!-- Project Development -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step blue">
-                        <i class="fas fa-seedling"></i>
-                      </span>
-                      <h4 class="service-heading">Climate Smart Agriculture</h4>
-                      <p class="service-description">
-                        Seamless market entry into Ghana and West African markets through our localized partnerships, ensuring smooth regulatory compliance and risk management.
-                      </p>
+          <!-- Farm Mechanization Service Centers -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/farming-machine.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              A new platform to provide farmers with access to farming equipment to expand output and reduce post-harvest losses through a structured framework under Mechanization as a Service (MaaS).
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Farm Mechanization Service Centers</h4>
               </div>
-    
-              <!-- Capital Raising -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step midnight">
-                        <i class="fas fa-tractor"></i>
-                      </span>
-                      <h4 class="service-heading">Farm Mechanization Service Centers</h4>
-                      <p class="service-description">
-                        A new platform to provide farmers with access to farming equipment to expand output and reduce post-harvest losses through a structured framework under Mechanization as a Service (MaaS).
-                      </p>
+          </div>
+
+          <!-- Just-In-Time in LPG Value Chain -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/cylinder.jpeg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Enhancing efficiencies in the downstream LPG supply chain to limit stockouts for users. Our solution ensures consistent supply and improved distribution management.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Just-In-Time in LPG Value Chain</h4>
               </div>
-    
-              <!-- Accounting Services -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step purple">
-                        <i class="fas fa-gas-pump"></i>
-                      </span>
-                      <h4 class="service-heading">Just-In-Time in LPG Value Chain</h4>
-                      <p class="service-description">
-                        Enhancing efficiencies in the downstream LPG supply chain to limit stockouts for users. Our solution ensures consistent supply and improved distribution management.
-                      </p>
+          </div>
+
+          <!-- Education -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/education.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Policy reforms, financing, learning technology platforms, performance management.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Education</h4>
               </div>
-    
-              <!-- Education -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step pink">
-                        <i class="fas fa-book"></i>
-                      </span>
-                      <h4 class="service-heading">Education</h4>
-                      <p class="service-description">
-                        Policy reforms, financing, learning technology platforms, performance management.
-                      </p>
+          </div>
+
+          <!-- Health -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/health.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Alternative Medicine Policy, healthcare financing, technology delivery platforms and equipment, medical consumables.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Health</h4>
               </div>
-    
-              <!-- Health -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step blue">
-                        <i class="fas fa-briefcase-medical"></i>
-                      </span>
-                      <h4 class="service-heading">Health</h4>
-                      <p class="service-description">
-                        Alternative Medicine Policy, healthcare financing, technology delivery platforms and equipment, medical consumables.
-                      </p>
+          </div>
+
+          <!-- Agriculture -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/agric.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Post-harvest technology, grains and poultry value chains alignment, agroforestry and carbon finance, cocoa and shea nuts.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Agriculture</h4>
               </div>
-    
-              <!-- Agriculture -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step midnight">
-                        <i class="fas fa-leaf"></i>
-                      </span>
-                      <h4 class="service-heading">Agriculture</h4>
-                      <p class="service-description">
-                        Post-harvest technology, grains and poultry value chains alignment, agroforestry and carbon finance, cocoa and shea nuts.
-                      </p>
+          </div>
+
+          <!-- Energy -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/energy.jpeg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              Utilities, Oil & Gas, Renewables.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">Energy</h4>
               </div>
-    
-              <!-- Energy -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step blue">
-                        <i class="fas fa-bolt"></i>
-                      </span>
-                      <h4 class="service-heading">Energy</h4>
-                      <p class="service-description">
-                        Utilities, Oil & Gas, Renewables.
-                      </p>
+          </div>
+
+          <!-- FinTech -->
+          <div class="col-md-3 mb-4">
+              <div class="project-item">
+                  <div class="project-card" style="background-image: url('./img/cashless-payment.jpg');">
+                      <div class="project-overlay">
+                          <p class="project-description">
+                              POS payments liquidation, sandbox regulations compliance support, product development.
+                          </p>
+                      </div>
                   </div>
+                  <h4 class="project-title">FinTech</h4>
               </div>
-    
-              <!-- FinTech -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step pink">
-                        <i class="fas fa-credit-card"></i>
-                      </span>
-                      <h4 class="service-heading">FinTech</h4>
-                      <p class="service-description">
-                        POS payments liquidation, sandbox regulations compliance support, product development.
-                      </p>
-                  </div>
-              </div>
-    
           </div>
       </div>
-    </section>
+  </div>
+</section>
+
+<!--Projects End-->
+<!--Industries Start-->
+<section class="bg-light py-5" id="industries">
+  <style>
+    .industry-image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      height: 100%;
+    }
     
-    <!--Projects End-->
+    .industry-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .industry-image-container:hover .industry-image {
+      transform: scale(1.05);
+    }
+    
+    .industry-list-item {
+      padding: 1rem 1.25rem;
+      border-left: 3px solid transparent;
+      transition: all 0.3s ease;
+      background: white;
+      margin-bottom: 0.5rem;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .industry-list-item:hover {
+      border-left-color: #007bff;
+      transform: translateX(5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .industry-list-item strong {
+      color: #007bff;
+    }
+    
+    .title .main-color {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    
+    .heading-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
 
-
-    <!--Industries Start-->
-    <section class="bg-light" id="industries">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-6 wow fadeInLeft"
-            style="visibility: visible; animation-name: fadeInLeft;"
-          >
-            <div class="heading-area">
-              <h2 class="title">
-                <span class="main-color js-rotating morphext">
-                  <span class="animated flipInX">Expertise</span>
-                </span>
-                Across Key Global Industries
-              </h2>
-              <p class="para">
-                Both our in-house team and the combined expertise of our partners have given credence to our effective participation in the following industries:
-              </p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <strong>FMCG:</strong> Food & Beverages, Personal Care, Household Cleaning Products
-                </li>
-                <li class="list-group-item">
-                    <strong>Infrastructure:</strong> Roads, Rail, Aviation; Commercial, Office, and Residential Estates; Hydro, Power, Telecom & Technology
-                </li>
-                <li class="list-group-item">
-                    <strong>Transport & Logistics:</strong> Airlines, EVs, Rail Coaches
-                </li>
-            </ul>
-            
+  <div class="container">
+    <div class="row align-items-center">
+      <div
+        class="col-lg-6 wow fadeInLeft"
+        style="visibility: visible; animation-name: fadeInLeft;"
+      >
+        <div class="heading-area">
+          <h2 class="title mb-4">
+            <span class="main-color js-rotating morphext">
+              <span class="animated flipInX">Expertise</span>
+            </span>
+            Across Key Global Industries
+          </h2>
+          <p class="para mb-4">
+            Both our in-house team and the combined expertise of our partners have given credence to our effective participation in the following industries:
+          </p>
+          <div class="industry-list">
+            <div class="industry-list-item">
+                <strong>FMCG:</strong> Food & Beverages, Personal Care, Household Cleaning Products
             </div>
-          </div>
-          <div
-            class="col-lg-6 wow fadeInRight"
-            style="visibility: visible; animation-name: fadeInRight;"
-          >
-            <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-              <img alt="image" src="./index_files/vector-art-4.png" />
+            <div class="industry-list-item">
+                <strong>Infrastructure:</strong> Roads, Rail, Aviation; Commercial, Office, and Residential Estates; Hydro, Power, Telecom & Technology
+            </div>
+            <div class="industry-list-item">
+                <strong>Transport & Logistics:</strong> Airlines, EVs, Rail Coaches
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--Industries End-->
-
-
+      <div
+        class="col-lg-6 wow fadeInRight"
+        style="visibility: visible; animation-name: fadeInRight;"
+      >
+        <div class="industry-image-container mt-5 mt-lg-0">
+          <img 
+            class="industry-image" 
+            alt="Industry Expertise" 
+            src="./img/industry_experts.jpeg" 
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Industries End-->
     
-    <!--Insights Start-->
-
-    <section id="insights" class="py-5">
-      <style>
-        .process-wrapp {
-            position: relative;
-            text-align: center;
-            padding: 2rem 1.5rem;
-            background: #fff;
-            box-shadow: 0 0 30px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            height: 100%;
-        }
-      </style>
-     
-      <div class="container">
-          <h2 class="mb-5">Insights</h2>
-          <div class="row">
-              <!-- Tax Updates -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step blue">
-                        <i class="fas fa-seedling"></i>
-                      </span>
+    
+<!-- Insights Section -->
+<section id="insights" class="py-5">
+  <style>
+    .process-wrapp {
+        position: relative;
+        text-align: center;
+        padding: 0;
+        background: #fff;
+        box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .process-wrapp:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .service-img-container {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .service-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .process-wrapp:hover .service-img {
+        transform: scale(1.1);
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .service-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .process-wrapp:hover .service-overlay {
+        opacity: 1;
+    }
+    
+    .overlay-text {
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+  </style>
+ 
+  <div class="container">
+      <h2 class="mb-5">Insights</h2>
+      <div class="row">
+          <!-- Tax Updates -->
+          <div class="col-md-3 mb-5">
+              <div class="process-wrapp">
+                  <div class="service-img-container">
+                      <img src="./img/taxes.jpg" alt="Tax Updates" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
                       <h4 class="service-heading">Tax Updates</h4>
                       <p class="service-description">
-                        Stay informed on the latest tax regulations and implications.
+                          Stay informed on the latest tax regulations and implications for your business operations in Ghana and West Africa.
                       </p>
                   </div>
               </div>
-    
-              <!-- Agribusiness Emerging Opportunities -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step midnight">
-                        <i class="fas fa-leaf"></i>
-                      </span>
-                      <h4 class="service-heading">Agribusiness Emerging Opportunities</h4>
+          </div>
+
+          <!-- Agribusiness Emerging Opportunities -->
+          <div class="col-md-3 mb-5">
+              <div class="process-wrapp">
+                  <div class="service-img-container">
+                      <img src="./img/agric-opportunities.jpg" alt="Agribusiness Opportunities" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
+                      <h4 class="service-heading">Agribusiness Opportunities</h4>
                       <p class="service-description">
-                        Discover growth areas within the agribusiness sector.
+                          Discover growth areas and investment opportunities within the expanding agribusiness sector across the region.
                       </p>
                   </div>
               </div>
-    
-              <!-- FinTech Regulation -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step purple">
-                        <i class="fas fa-credit-card"></i>
-                      </span>
+          </div>
+
+          <!-- FinTech Regulation -->
+          <div class="col-md-3 mb-5">
+              <div class="process-wrapp">
+                  <div class="service-img-container">
+                      <img src="./img/fintech.jpg" alt="FinTech Regulation" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
                       <h4 class="service-heading">FinTech Regulation</h4>
                       <p class="service-description">
-                        Understand the evolving landscape of financial technology regulations.
+                          Understand the evolving landscape of financial technology regulations and compliance requirements in emerging markets.
                       </p>
                   </div>
               </div>
-    
-              <!-- Public Sector -->
-              <div class="col-md-3 mb-5">
-                  <div class="process-wrapp">
-                      <span class="pro-step pink">
-                        <i class="fas fa-book"></i>
-                      </span>
+          </div>
+
+          <!-- Public Sector -->
+          <div class="col-md-3 mb-5">
+              <div class="process-wrapp">
+                  <div class="service-img-container">
+                      <img src="./img/public.jpg" alt="Public Sector" class="service-img">
+                      <div class="service-overlay">
+                          <span class="overlay-text"></span>
+                      </div>
+                  </div>
+                  <div class="service-content">
                       <h4 class="service-heading">Public Sector</h4>
                       <p class="service-description">
-                        Insights into government initiatives and policy changes.
+                          Gain insights into government initiatives, policy changes, and public-private partnership opportunities in the region.
                       </p>
                   </div>
               </div>
-    
           </div>
       </div>
-    </section>
-    
-    <!--Insights End-->
+  </div>
+</section>
+<!--Insights End-->
 
     <!--Contact Start-->
     <section class="contact-us" id="contact">
@@ -888,7 +1140,7 @@
                     <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
                   </span>
                   <span class="address-text">
-                    123 Business Street, Accra, Ghana
+                    8 0lympic Street, Kokomlemle, Accra, Ghana.
                   </span>
                 </li>
                 <li>
