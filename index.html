@@ -343,6 +343,10 @@
       charset="UTF-8"
       src="./index_files/controls.js.download"
     ></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
 
   <body
@@ -529,35 +533,54 @@
     <!--Header End-->
 
     <!--About Us-->
-    <section class="pb-0" id="about-us">
-      <div class="gradient-bg1 bg-overlay"></div>
   
-      <div class="container">
-          <div class="row d-flex align-items-center justify-content-center text-center">
-              <div class="col-lg-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-                  <div class="heading-area mx-auto">
-                      <h2 class="title">
-                          <span class="alt-color js-rotating morphext">
-                              <span class="animated flipInX">Tailored Solutions</span>
-                          </span>
-                          for Growth and Success
-                      </h2>
-                      <p class="para">
-                          We are a business advisory company dedicated to providing tailored solutions in Projects Development, 
-                          Strategy, and Capital Raising. 
-                          Our expertise spans diverse industries, 
-                          making us a trusted partner in delivering solutions for both private and public sector clients.
-                      </p>
-                  </div>
+<section class="pb-0" id="about-us">
+  <div class="gradient-bg1 bg-overlay"></div>
+
+  <div class="container">
+      <div class="row d-flex align-items-center justify-content-center text-center">
+          <div class="col-lg-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+              <div class="heading-area mx-auto">
+                  <h2 class="title">
+                      <span class="alt-color js-rotating morphext">
+                          <span class="animated flipInX">Tailored Solutions</span>
+                      </span>
+                      for Growth and Success
+                  </h2>
+                  <p class="para">
+                      We are a business advisory company dedicated to providing tailored solutions in Projects Development, 
+                      Strategy, and Capital Raising. 
+                      Our expertise spans diverse industries, 
+                      making us a trusted partner in delivering solutions for both private and public sector clients.
+                  </p>
               </div>
-              <div class="col-lg-6 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-                  <div class="half-img mt-5 pt-4">
-                      <img width="300" height="auto" alt="vector" src="./img/aw-insights.jpeg" />
+          </div>
+          <div class="col-lg-6 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+              <div class="swiper-container mt-5 pt-4">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img width="300" height="auto" alt="slide 1" src="./img/logo.jpeg" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img width="300" height="auto" alt="slide 2" src="./img/climate-smart-agriculture.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img width="300" height="auto" alt="slide 3" src="./img/farming-machine.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img width="300" height="auto" alt="slide 3" src="./img/cylinder.jpeg" />
+                    </div>
                   </div>
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- Navigation buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
               </div>
           </div>
       </div>
-  </section>
+  </div>
+</section>
   
     <!--About Us End-->
 
@@ -730,10 +753,10 @@
 <!--Projects Start-->
 <section id="projects" class="py-5">
   <div class="container">
-      <h2 class="mb-5 text-center">New Projects</h2>
+      <h2 class="mb-5">New Projects</h2>
       <div class="row">
           <!-- Climate Smart Agriculture -->
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
               <div class="project-item">
                   <div class="project-card" style="background-image: url('./img/climate-smart-agriculture.jpg');">
                       <div class="project-overlay">
@@ -747,7 +770,7 @@
           </div>
 
           <!-- Farm Mechanization Service Centers -->
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
               <div class="project-item">
                   <div class="project-card" style="background-image: url('./img/farming-machine.jpg');">
                       <div class="project-overlay">
@@ -761,7 +784,7 @@
           </div>
 
           <!-- Just-In-Time in LPG Value Chain -->
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
               <div class="project-item">
                   <div class="project-card" style="background-image: url('./img/cylinder.jpeg');">
                       <div class="project-overlay">
@@ -774,75 +797,6 @@
               </div>
           </div>
 
-          <!-- Education -->
-          <div class="col-md-3 mb-4">
-              <div class="project-item">
-                  <div class="project-card" style="background-image: url('./img/education.jpg');">
-                      <div class="project-overlay">
-                          <p class="project-description">
-                              Policy reforms, financing, learning technology platforms, performance management.
-                          </p>
-                      </div>
-                  </div>
-                  <h4 class="project-title">Education</h4>
-              </div>
-          </div>
-
-          <!-- Health -->
-          <div class="col-md-3 mb-4">
-              <div class="project-item">
-                  <div class="project-card" style="background-image: url('./img/health.jpg');">
-                      <div class="project-overlay">
-                          <p class="project-description">
-                              Alternative Medicine Policy, healthcare financing, technology delivery platforms and equipment, medical consumables.
-                          </p>
-                      </div>
-                  </div>
-                  <h4 class="project-title">Health</h4>
-              </div>
-          </div>
-
-          <!-- Agriculture -->
-          <div class="col-md-3 mb-4">
-              <div class="project-item">
-                  <div class="project-card" style="background-image: url('./img/agric.jpg');">
-                      <div class="project-overlay">
-                          <p class="project-description">
-                              Post-harvest technology, grains and poultry value chains alignment, agroforestry and carbon finance, cocoa and shea nuts.
-                          </p>
-                      </div>
-                  </div>
-                  <h4 class="project-title">Agriculture</h4>
-              </div>
-          </div>
-
-          <!-- Energy -->
-          <div class="col-md-3 mb-4">
-              <div class="project-item">
-                  <div class="project-card" style="background-image: url('./img/energy.jpeg');">
-                      <div class="project-overlay">
-                          <p class="project-description">
-                              Utilities, Oil & Gas, Renewables.
-                          </p>
-                      </div>
-                  </div>
-                  <h4 class="project-title">Energy</h4>
-              </div>
-          </div>
-
-          <!-- FinTech -->
-          <div class="col-md-3 mb-4">
-              <div class="project-item">
-                  <div class="project-card" style="background-image: url('./img/cashless-payment.jpg');">
-                      <div class="project-overlay">
-                          <p class="project-description">
-                              POS payments liquidation, sandbox regulations compliance support, product development.
-                          </p>
-                      </div>
-                  </div>
-                  <h4 class="project-title">FinTech</h4>
-              </div>
-          </div>
       </div>
   </div>
 </section>
@@ -850,98 +804,122 @@
 <!--Projects End-->
 <!--Industries Start-->
 <section class="bg-light py-5" id="industries">
-  <style>
-    .industry-image-container {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.1);
-      height: 100%;
-    }
-    
-    .industry-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    
-    .industry-image-container:hover .industry-image {
-      transform: scale(1.05);
-    }
-    
-    .industry-list-item {
-      padding: 1rem 1.25rem;
-      border-left: 3px solid transparent;
-      transition: all 0.3s ease;
-      background: white;
-      margin-bottom: 0.5rem;
-      border-radius: 0 4px 4px 0;
-    }
-    
-    .industry-list-item:hover {
-      border-left-color: #007bff;
-      transform: translateX(5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-    
-    .industry-list-item strong {
-      color: #007bff;
-    }
-    
-    .title .main-color {
-      display: inline-block;
-      margin-right: 0.5rem;
-    }
-    
-    .heading-area {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  </style>
-
+ 
   <div class="container">
-    <div class="row align-items-center">
-      <div
-        class="col-lg-6 wow fadeInLeft"
-        style="visibility: visible; animation-name: fadeInLeft;"
-      >
-        <div class="heading-area">
-          <h2 class="title mb-4">
-            <span class="main-color js-rotating morphext">
-              <span class="animated flipInX">Expertise</span>
-            </span>
-            Across Key Global Industries
-          </h2>
-          <p class="para mb-4">
-            Both our in-house team and the combined expertise of our partners have given credence to our effective participation in the following industries:
-          </p>
-          <div class="industry-list">
-            <div class="industry-list-item">
-                <strong>FMCG:</strong> Food & Beverages, Personal Care, Household Cleaning Products
+    <h2 class="mb-5">Industries</h2>
+    <div class="row">
+        <!-- Education -->
+        <div class="col-md-3 mb-4">
+            <div class="project-item">
+                <div class="project-card" style="background-image: url('./img/education.jpg');">
+                    <div class="project-overlay">
+                        <p class="project-description">
+                            Policy reforms, financing, learning technology platforms, performance management.
+                        </p>
+                    </div>
+                </div>
+                <h4 class="project-title">Education</h4>
             </div>
-            <div class="industry-list-item">
-                <strong>Infrastructure:</strong> Roads, Rail, Aviation; Commercial, Office, and Residential Estates; Hydro, Power, Telecom & Technology
+        </div>
+
+        <!-- Health -->
+        <div class="col-md-3 mb-4">
+            <div class="project-item">
+                <div class="project-card" style="background-image: url('./img/health.jpg');">
+                    <div class="project-overlay">
+                        <p class="project-description">
+                            Alternative Medicine Policy, healthcare financing, technology delivery platforms and equipment, medical consumables.
+                        </p>
+                    </div>
+                </div>
+                <h4 class="project-title">Health</h4>
             </div>
-            <div class="industry-list-item">
-                <strong>Transport & Logistics:</strong> Airlines, EVs, Rail Coaches
+        </div>
+
+        <!-- Agriculture -->
+        <div class="col-md-3 mb-4">
+            <div class="project-item">
+                <div class="project-card" style="background-image: url('./img/agric.jpg');">
+                    <div class="project-overlay">
+                        <p class="project-description">
+                            Post-harvest technology, grains and poultry value chains alignment, agroforestry and carbon finance, cocoa and shea nuts.
+                        </p>
+                    </div>
+                </div>
+                <h4 class="project-title">Agriculture</h4>
             </div>
+        </div>
+
+        <!-- Energy -->
+        <div class="col-md-3 mb-4">
+            <div class="project-item">
+                <div class="project-card" style="background-image: url('./img/energy.jpeg');">
+                    <div class="project-overlay">
+                        <p class="project-description">
+                            Utilities, Oil & Gas, Renewables.
+                        </p>
+                    </div>
+                </div>
+                <h4 class="project-title">Energy</h4>
+            </div>
+        </div>
+
+        <!-- FinTech -->
+        <div class="col-md-3 mb-4">
+            <div class="project-item">
+                <div class="project-card" style="background-image: url('./img/cashless-payment.jpg');">
+                    <div class="project-overlay">
+                        <p class="project-description">
+                            POS payments liquidation, sandbox regulations compliance support, product development.
+                        </p>
+                    </div>
+                </div>
+                <h4 class="project-title">FinTech</h4>
+            </div>
+        </div>
+
+         <!-- FMCG -->
+         <div class="col-md-3 mb-4">
+          <div class="project-item">
+              <div class="project-card" style="background-image: url('./img/fmcg.jpeg');">
+                  <div class="project-overlay">
+                      <p class="project-description">
+                          Food & Beverages, Personal Care, Household Cleaning Products.
+                      </p>
+                  </div>
+              </div>
+              <h4 class="project-title">FMCG</h4>
           </div>
-        </div>
       </div>
-      <div
-        class="col-lg-6 wow fadeInRight"
-        style="visibility: visible; animation-name: fadeInRight;"
-      >
-        <div class="industry-image-container mt-5 mt-lg-0">
-          <img 
-            class="industry-image" 
-            alt="Industry Expertise" 
-            src="./img/industry_experts.jpeg" 
-          />
-        </div>
+
+      <!-- Infrastructure -->
+      <div class="col-md-3 mb-4">
+          <div class="project-item">
+              <div class="project-card" style="background-image: url('./img/infrastructure.jpeg');">
+                  <div class="project-overlay">
+                      <p class="project-description">
+                          Roads, Rail, Aviation; Commercial, Office, and Residential Estates; Hydro, Power, Telecom & Technology.
+                      </p>
+                  </div>
+              </div>
+              <h4 class="project-title">Infrastructure</h4>
+          </div>
       </div>
+
+      <!-- Transport & Logistics -->
+      <div class="col-md-3 mb-4">
+          <div class="project-item">
+              <div class="project-card" style="background-image: url('./img/transport.jpg');">
+                  <div class="project-overlay">
+                      <p class="project-description">
+                          Airlines, EVs, Rail Coaches.
+                      </p>
+                  </div>
+              </div>
+              <h4 class="project-title">Transport & Logistics</h4>
+          </div>
+      </div>
+  </div>
     </div>
   </div>
 </section>
@@ -1111,6 +1089,7 @@
               <!--Heading-->
               <div class="heading-area pb-5">
                 <h2 class="title mt-0 pb-1">Our Location</h2>
+                <img width="250" height="auto" src="./img/logo.jpeg" alt="">
               
               </div>
 
@@ -1372,5 +1351,27 @@
     <script src="./index_files/script.js.download"></script>
 
     <div id="torrent-scanner-popup" style="display: none;"></div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper-container", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+</script>
   </body>
 </html>
